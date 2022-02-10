@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FaceSnap } from '../models/face-snap.model';
-import { Constants } from '../tools/tools.constants';
 
 @Component({
   selector: 'app-face-snap',
@@ -10,7 +9,6 @@ import { Constants } from '../tools/tools.constants';
 export class FaceSnapComponent implements OnInit {
 
   @Input() faceSnap!: FaceSnap;
-  @Input() constants!: Constants;
   
   buttonText!: string;
 
