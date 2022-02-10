@@ -12,26 +12,26 @@ export class AppComponent implements OnInit{
   myLastSnap!: FaceSnap;
 
   ngOnInit() {
-    this.mySnap = new FaceSnap(
-      'Archibald',
-      'Mon meilleur ami depuis tout petit !',
-      'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-      new Date(),
-      0
-    );    
-    this.myOtherSnap = new FaceSnap(
-      'ThreeRockMontain',
-      'Mon meilleur ami depuis tout petit !',
-      'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-      new Date(),
-      0
-    );    
-    this.myLastSnap = new FaceSnap(
-      'UnBonRepas',
-      'Mon meilleur ami depuis tout petit !',
-      'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-      new Date(),
-      0
-    );
+    this.mySnap = {
+      title: 'Archibald',
+      description: 'Mon meilleur ami depuis tout petit !',
+      imageUrl: 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
+      createdDate: new Date(),
+      snaps: 0
+  } ;    
+    this.myOtherSnap = {
+      title:' ThreeRockMontain',
+      description: 'Mon meilleur ami depuis tout petit !',
+      imageUrl: 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
+      createdDate: new Date(),
+      snaps: 0
+    };    
+    this.myLastSnap = {
+      title: 'UnBonRepas',
+      description: 'Mon meilleur ami depuis tout petit !',
+      imageUrl: 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
+      createdDate: new Date(),
+      snaps: 0
+    };
   }
 }

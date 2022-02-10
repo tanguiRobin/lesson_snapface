@@ -13,13 +13,7 @@ export class FaceSnapComponent implements OnInit {
   buttonText!: string;
 
   ngOnInit(): void {
-    this.faceSnap = new FaceSnap(
-      'Archibald',
-      'Mon meilleur ami depuis tout petit !', 
-      'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-      new Date(), 
-      6);
-      this.buttonText = 'Oh Snap!';
+    this.buttonText = 'Oh Snap!';
   }
 
   onSnap() {
